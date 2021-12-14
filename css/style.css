@@ -1,0 +1,331 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+
+header{
+	width:100% ;height:100vh ;
+	background-color: #2d3436;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+nav{
+	width: 100%; height: 15vh;
+	background:#161623 ;
+	color: white; display: flex; justify-content: space-between;
+	align-items: center; text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%; text-align: center;
+	background:;
+
+}
+
+nav .menu{
+	width: 40%; background: ;
+	display: flex; justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; color: #34ace0;
+	font-weight: bold;
+	font-size: 15px;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+main{
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center  ;
+	text-align: center;
+	background-color: #161623;
+}
+
+section{
+
+}
+
+section h3{
+
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px blue;
+	color: #12CBC4;
+	font-weight: 900;
+}
+
+section h1{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font-weight: 200;
+	text-shadow: 2px 1px 5px blue;
+	text-transform: uppercase;
+	color: white;
+	word-spacing: 5px;
+}
+
+section h2{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font-weight: 200;
+	text-shadow: 20px 10px 20px black;
+	text-transform: uppercase;
+	color: white;
+	word-spacing: 3px;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px blue;
+
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px ;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+	background: #fff;
+	color: #000 ;
+
+}
+
+.btnone:hover{
+	background: #00b894;
+	color: white;
+
+}
+
+section .btntwo{
+	background: #00b894;
+	color: white;
+}
+
+.btntwo:hover{
+	background: #fff;
+	color: #000 ;
+}
+
+
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #d63031;
+
+}
+
+@keyframes changetext{
+	0%{content:"Netflix";}
+	20%{content:"Amazone-prime";color: skyblue;}
+	40%{content:"Disney-plus";color: white;}
+	60%{content:"HBO-max";color: black;}
+	80%{content:"Toffee";color: pink;}
+	100%{content:"Paramount+";color: green;}
+}
+
+footer{
+	width: 100%; height: 20vh;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.centerdiv{
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a{
+	height: 100px;
+	width: 100px;
+	background-color: #1e272e;
+	margin: 10px;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 1px 4px 2px 2px #dcdde1;
+	line-height: 110px;position: relative;
+	overflow: hidden;
+}
+
+
+.fa-youtube{
+	color: #EA2027;
+}
+
+.fa-linkedin{
+	color: #0097e6;
+}
+
+.fa-instagram{
+	color: #B53471;
+}
+
+.fa-twitter{
+	color: #1289A7;
+}
+
+.fa-facebook{
+	color: #273c75;
+}
+
+footer a i{
+	transition: all 0.3s linear;
+}
+
+footer a:hover .fa{
+	transform: scale(1.5);
+	color:#00a8ff ;
+}
+
+footer a:before{
+	content: "";
+	width: 120% ;height: 120%;
+	position: absolute;
+	top: 90%; left: -50%;
+	background-color:#353b48;
+	transform:rotate(60deg) ;
+}
+
+footer a:hover:before{
+	animation: socialicons 0.8s 1;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes socialicons{
+	0%{ top: 90%; left: -50%; }
+	50%{ top: -60%; left: -10%; }
+	100%{ top: -10%; left: -10%; }
+}
+
+p1{
+	font-size: 25px;
+	color: #eee;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.container .card{
+	position: relative;
+	width: 250px;
+	height: 280px;
+	margin: 30px;
+	box-shadow: 20px 20px 50px blue;
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+
+}
+
+.container .card .content{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(100px);
+	opacity: 10;
+	transition: 0.5s;
+
+
+}
+
+.container .card:hover .content{
+	transform: translateY(0px);
+	opacity: 1;
+
+}
+
+.container .card .content h2{
+	position: absolute;
+	top:-80px;
+	right: 30px;
+	font-size: 4em;
+	color: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+}
+
+.container .card .content h3{
+	font-size: 1.8em;
+	color: #fff;
+	z-index: 1;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+.container .card .content p{
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	text-shadow: 1px 1px 2px black;
+}
+
+.container .card .content a{
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top:15px;
+	background: #fff;
+	color: #000;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow:0 5px 15px rgba(0, 0, 0, 0.2) ; 
+}
+
+mark{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center  ;
+	text-align: center;
+	background-color: #161623;
+}
+mark1{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center  ;
+	text-align: center;
+	background-color: #161623;
+}
+
